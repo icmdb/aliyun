@@ -1,0 +1,16 @@
+version: "3"
+services:
+  iwebhook-csr:
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: iwebhook-csr
+    hostname: iwebhook-csr
+    image: icmdb/iwebhook-csr
+    environment:
+      - APP_ADDR=0.0.0.0
+      - APP_PORT=8080
+      - APP_DEBUG=True
+    ports:
+      - 8080:8080
+    restart: always
