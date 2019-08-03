@@ -74,6 +74,7 @@ def ali_csr_webook():
     payload = {
         "channel": u"#ops-builds",
         "username": u"阿里云容器镜像服务",
+        "icon_url": u"https://ucc.alicdn.com/pic/developer-ecology/26b911901cd242e48512b1790c306175.png",
         "attachments": [
             {
                 "fallback": "Image [<https://cr.console.aliyun.com/repository/REGION/NAMESPACE/PROJECT/details|NAMESPACE/PROJECT>] pushed sucessfully!",
